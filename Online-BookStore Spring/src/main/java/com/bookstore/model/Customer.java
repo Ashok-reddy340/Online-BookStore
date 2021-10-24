@@ -24,6 +24,7 @@ public class Customer {
 
 	@Column(name = "type")
 	private String type;
+	//getters and setters of variables
 
 	public Long getId() {
 		return id;
