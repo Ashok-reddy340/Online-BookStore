@@ -29,7 +29,9 @@ export class HttpClientService {
   addBook(newBook: Book) {
     return this.httpClient.post<Book>('http://localhost:8012/books/add', newBook);
   }
-
+  deleteBook(id) {
+    return this.httpClient.delete<Book>('http://localhost:8012/books/' + id);
+  }
 
 
 }
