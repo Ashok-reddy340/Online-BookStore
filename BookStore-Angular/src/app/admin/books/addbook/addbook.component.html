@@ -1,4 +1,6 @@
-<h1>Add Book Details</h1>
+
+
+<h1>{{book.id == null ? 'Add' : 'Edit'}} Book Details - {{book.id}}</h1>
 
 <form>
   <label for="name">Name</label>
@@ -10,11 +12,12 @@
   <label for="author">Price</label>
   <input type="text" class="form-control" id="price" placeholder="price" name="price" [(ngModel)]="book.price">
 
-
+  <div class="form-group" *ngIf="book.id == null">
+    <!-- only show this field on adding a book -->
     <br>
     <input type="file" (change)="onFileChanged($event)">
     <img [src]="imgURL" height="200" width="200" *ngIf="imgURL">
-
-  <br>
+  </div>
+  <br><br>
   <button type="button" class="btn btn-success" (click)="saveBook()">Save Book</button>
 </form>
