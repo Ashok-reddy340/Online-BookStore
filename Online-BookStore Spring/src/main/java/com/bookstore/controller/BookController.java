@@ -45,10 +45,6 @@ public class BookController {
 		bookRepository.save(book);
 		this.bytes = null;
 	}
-	@PutMapping("/update")
-	public void updateBook(@RequestBody Book book) {
-		bookRepository.save(book);
-	}
 
 	@DeleteMapping(path = { "/{id}" })
 	public Book deleteBook(@PathVariable("id") long id) {
@@ -56,6 +52,12 @@ public class BookController {
 		bookRepository.deleteById(id);
 		return book;
 	}
+	@PutMapping("/update")
+	public void updateBook(@RequestBody Book book) {
+		bookRepository.save(book);
+	}
+
+
 
 
 
