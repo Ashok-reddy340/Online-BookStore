@@ -13,6 +13,7 @@ import { ViewuserComponent } from './admin/users/viewuser/viewuser.component';
 import { BooksComponent } from './admin/books/books.component';
 import { AddbookComponent } from 'src/app/admin/books/addbook/addbook.component';
 import { ViewbookComponent } from './admin/books/viewbook/viewbook.component';
+import { ShopbookComponent } from './shopbook/shopbook.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ViewbookComponent } from './admin/books/viewbook/viewbook.component';
     ViewuserComponent,
     BooksComponent,
     AddbookComponent,
-    ViewbookComponent
+    ViewbookComponent,
+    ShopbookComponent
   
   ],
   imports: [
