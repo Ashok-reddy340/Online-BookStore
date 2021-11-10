@@ -1,0 +1,10 @@
+input[type=text]{
+    background-color: #3CBC8D;
+    color: white;
+  }
+  form {
+    margin-left: 30px;
+}
+h1{
+  margin-left: 30px;
+}

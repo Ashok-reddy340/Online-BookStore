@@ -1,19 +1,24 @@
+
 <h1>Books</h1>
-<a class="btn btn-primary mb-3" (click)="addBook()">Add New Book</a>
+<a class="btn btn-primary mb-3" style="margin-right: 250px" style="background-color:plum;" style="font-size : 20px"(click)="addBook()">Add New Book</a>
 <div class="container row">
   <div class="col-md-6">
     <table class="table">
       <thead>
-        <tr>
+        <tr style="font-size : 20px">
           <th>ID</th>
           <th>Book Name</th>
+          <th>Book Cover</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let book of books">
-          <td>{{book.id}}</td>
-          <td>{{book.name}}</td>
+          
+         <td>{{book.id}}</td>
+          <td><strong>{{book.name}}</strong></td>
+          <td><img src="{{book.retrievedImage}}" height="100" width="120">
+          </td>
           <td>
             <button type="button" class="btn btn-primary" (click)="viewBook(book.id)"> Show Details</button>
           </td>

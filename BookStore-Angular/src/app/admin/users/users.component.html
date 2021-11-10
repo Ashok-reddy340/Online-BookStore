@@ -1,5 +1,5 @@
 <h1>Customer & Admin</h1>
-<a class="btn btn-primary mb-3" (click)="addUser()">add</a>
+<a class="btn btn-primary mb-3" style="font-size : 20px"  (click)="addUser()">add</a>
 <div class="container row">
     <div   class="col-md-6">
     <table class="table">
@@ -13,7 +13,7 @@
       <tbody>
       <tr *ngFor="let user of users" >
         <td>{{user.id}}</td>
-        <td>{{user.name}}</td>
+        <td><strong>{{user.name}}</strong></td>
         <td><button type="button" class="btn btn-primary" (click)="viewUser(user.id)">Show Details</button></td>
       </tr>
       </tbody>

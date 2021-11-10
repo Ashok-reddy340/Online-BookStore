@@ -1,3 +1,4 @@
+<div>
 <h1>Book Details</h1>
 
 <table>
@@ -15,13 +16,13 @@
     </tr>
     <tr>
         <td>Book Price</td>
-        <td>{{book.price}}</td>
+        <td>{{book.price | currency:'INR'}}</td>
     </tr>
 </table>
 <br>
 <img src="{{book.retrievedImage}}" height="200" width="200">
 <br><br>
-<a class="btn btn-small btn-warning" (click)="editBook()">edit</a> ---
+<a class="btn btn-small btn-warning"  (click)="editBook()" style="margin-left: 30px">EDIT</a> --- 
 
-<a class="btn btn-small btn-danger" (click)="deleteBook()">delete</a>
-
+<a class="btn btn-small btn-danger" (click)="deleteBook()">DELETE</a>
+</div>
