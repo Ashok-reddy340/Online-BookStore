@@ -8,7 +8,7 @@ public class OnlineBookStoreSpringApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OnlineBookStoreSpringApplication.class, args);
-		System.out.println("ashok bookstore");
+		System.out.println(" bookstore project in Spring Boot");
 	}
 
 }
