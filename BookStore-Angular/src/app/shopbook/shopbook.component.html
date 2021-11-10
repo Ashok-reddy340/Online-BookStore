@@ -1,4 +1,5 @@
-<div class="container row">
+
+<div class="container row" style="background-color:lightgray;">
         <div class="col-md-2">
             <h1>Books</h1>
         </div>
@@ -14,11 +15,11 @@
                             </span>
                             <span class="caret">{{cartBooks.length}}</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-cart" role="menu">
+                        <ul class="dropdown-menu dropdown-cart" role="menu" >
                             <li *ngFor="let item of cartBooks">
                                 <div class="item product-cart-item row" aria-expanded="false">
                                     <div class="col-md-8" *ngIf="item" >{{item.name}}</div>
-                                    <div class="col-md-8" *ngIf="item"><strong>${{item.price}}</strong></div>
+                                    <div class="col-md-8" *ngIf="item"><strong>{{item.price | currency:'INR'}}</strong></div>
                                 </div>
                             </li>
                             <hr>
@@ -35,19 +36,18 @@
     
     <hr>
     <hr>
-    
-    
-    <div class="container row">
-        <div class="col-md-4" *ngFor="let book of books;let i=index">
-            <div class="card card-block">
-                <img class="custom-image-style" img src="{{book.retrievedImage}}" height="300" width="200" style="margin-left: 60px;
-              margin-top: 10px">
-                <div class="book-desc-container row">
+       
+    <div class="container row " style="background-color:lavender;">
+        <div class="col-sm-4 black" *ngFor="let book of books;let i=index" >
+            <div class="card card-block black">
+                <img class="custom-image-style" img src="{{book.retrievedImage}}" height="300" width="340" style="margin-right: 0px;
+              margin-top: 0px">
+                <div class="book-desc-container row " >
                     <div>
-                        <p style="margin-left: 60px"><strong>{{book.name}}: ${{book.price}}</strong></p>
-                        <p style="margin-left: 60px">{{book.author}}</p>
+                        <p style="margin-left: 100px" >{{book.name}} : <strong>{{book.price | currency:'INR'}}</strong></p>
+                        <p style="margin-left: 100px"> Author :<strong> {{book.author}}</strong></p>
                     </div>
-                    <div class="offset-md-4 col-md-4">
+                    <div class="offset-lg-4 col-lg-12">
                         <button class="btn btn-primary btn-sm" (click)="addToCart(book.id)"
                             [disabled]="book.isAdded===true">Add To Cart</button>
                     </div>
