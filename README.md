@@ -13,8 +13,8 @@
 <h2>Angular component creation</h2>
 <h4>Run ng g generate component component-name --spec false to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.</h4>
 <h2># Customer/users component </h2>
-<h4> ng g  components /admin/users --spec false : to create components like .html & .css & .spec & .ts files  to maintain mvc structure of user page 
-ng g components /admin/users/adduser --spec false : to add users list and delete  users and ng g components /admin/users/viewuser --spec false : view of users using css and html files  <h4>
+<h4> ng g  components /admin/users --spec false : to create components like .html & .css & .spec & .ts files  to maintain mvc structure of user page ,<br>
+ng g components /admin/users/adduser --spec false : to add users list and delete  users and <br> ng g components /admin/users/viewuser --spec false : view of users using css and html files  <h4>
 
 
 
