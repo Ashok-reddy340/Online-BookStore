@@ -10,7 +10,7 @@
 <h4>create Customers JPARepository and Book JPARepository to map database, to  a mapping subsystem to map classes onto relational tables as well as an EntityManager API to access the objects, define and execute queries</h4>
 <h2># Development server</h2>
 <h4>Run Spring web Apllicatiion  for a server. Navigate to http://localhost:8012/. The app will automatically reload if you change any of the source files.</h4>
-<h2>Angular component creation</h2>
+<h2># Angular component creation</h2>
 <h4>Run ng g generate component component-name --spec false to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.</h4>
 <h2>Model class</h2>
 <h4>user and book model class in model folder to connect to spring apllication</h4>
@@ -22,7 +22,7 @@ ng g components /admin/users/adduser --spec false : to add users list and delete
  ng g componets /admin/book/addbook --spec false 
   ng g componet /admin/book/viewbook --spec false </h4>
 <h3> ng g components /admin/shopbook --spec false : Entire view of store to user can view and add to cart for shopping</h3>
- h2>NPM</h2>
+ <h2>NPM</h2>
  <h4>to start project to go to project spacework and type npm install</h4>
 <h2># Development server Angular</h2>
 <h4>Run Angular Apllication for a server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.</h4>
