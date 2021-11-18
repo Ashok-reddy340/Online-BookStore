@@ -8,8 +8,9 @@
 <h4>create Customercontroller and BookController class mapping with url http://localhost:4200  with @Autowired annotations by  /get get customer details and book details,* the controller class is responsible for processing incoming REST API requests, preparing a model, and returning the view to be rendered as a response*.</h4>
 <h2># Rest JPA Repositories</h2>
 <h4>create Customers JPARepository and Book JPARepository to map database, to make The Java Persistence API (JPA) is the standard way of persisting Java objects into relational databases. The JPA consists of two parts: a mapping subsystem to map classes onto relational tables as well as an EntityManager API to access the objects, define and execute queries</h4>
-<h2># Spring Application</h2>
-main method of SpringBoot using @SpringBootApllication at http://localhost:8012 making run the Spring Apllication particular port
+<h2># Development server</h2>
+<h4>Run Spring web Apllicatiion  for a server. Navigate to http://localhost:8012/. The app will automatically reload if you change any of the source files.</h4>
+
 
 
   
