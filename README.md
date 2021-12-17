@@ -8,7 +8,7 @@
 <h4>create Customercontroller and BookController class mapping with url http://localhost:4200  with @Autowired annotations by  /get get customer details and book details,* .</h4>
 <h2># Rest JPA Repositories</h2>
 <h4>create Customers JPARepository and Book JPARepository to map database, to  a mapping subsystem to map classes onto relational tables as well as an EntityManager API to access the objects, define and execute queries</h4>
-<h2># Development server</h2>
+<h2># Development servers</h2>
 <h4>Run Spring web Apllicatiion  for a server. Navigate to http://localhost:8012/. The app will automatically reload if you change any of the source files.</h4>
 <h2># Angular component creation</h2>
 <h4>Run ng g generate component component-name --spec false to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.</h4>
